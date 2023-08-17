@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #6485a2;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 100px;
+    width: 640px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.card h1 {
+    padding-bottom: 10px;
+}
+
+.card input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 15px auto;
+    font-size: 400; 
+    padding: 10px;
+}
+
+.addBtn {
+    border: 1px solid #d3a8af;
+    outline: none;
+    padding: 10px;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+hr {
+    border-top: 1px solid #d3a8af;
+}
+
+.notesList {
+    list-style: none;
+}
+
+.noteItem {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d3a8af;
+}
+
+.deleteBtn {
+    border: 1px solid #731118;
+    outline: none;
+    padding: 10px;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+}
+
+.summary {
+    padding: 20px 0;
+}

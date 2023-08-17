@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Vue simple todo</title>
+</head>
+<body>
+    <div id="app" class="container">
+        <div class="card">
+            <h1>{{ title }}</h1>
+            <div class="form-input">
+                <input type="text" :placeholder="inputPlaceholder" v-model="inputValue" @keypress.enter="addNote">
+            </div>
+            <button @click="addNote" class="addBtn">Добавить</button>
+            <hr />
+            <ul class="notesList" v-if="notes.length !== 0">
+                <li class="noteItem" v-for="(note, i) in notes">
+                    <span>{{ note }}</span>
+                    <button class="deleteBtn" @click="deleteNote">Удалить</button>
+                </li>
+                <li class="summary">Всего дел: {{ notes.length }}</li>
+            </ul>
+            <div class="summary" v-else>
+                <span>Вы пока ничего не добавили.</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
